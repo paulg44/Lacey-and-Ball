@@ -66,6 +66,11 @@
 
   .serv-grid .serv-items h4 {
     font-size: 1.5rem;
+    order: 1;
+  }
+
+  .serv-grid .serv-items p {
+    order: 2;
   }
 
   .serv-grid .serv-items img {
