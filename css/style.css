@@ -72,6 +72,7 @@ img {
   padding: 0.75rem;
   border-radius: 16px;
   margin: 10px;
+  cursor: pointer;
 }
 
 .btn a {
@@ -374,11 +375,40 @@ hr {
 
 .testimonials {
   padding: 50px 20px;
+  position: relative;
+}
+
+.testimonials .testimonial-wrapper {
+  padding: 1rem 0;
 }
 
 .testimonials h4 {
-  font-size: 1.25rem;
-  padding: 10px 0;
+  margin-left: 40px;
+  font-size: 1.5rem;
+  text-shadow: var(--text-shadow);
+}
+
+.testimonials .bubble {
+  text-align: center;
+  width: 400px;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  padding: 20px 30px;
+  margin: 1.5rem 0;
+}
+
+.testimonials .bubble::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  margin-left: 50px;
+  margin-top: 20px;
+  border-left: 30px solid var(--secondary-color);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  transform: rotate(315deg);
+  z-index: 1;
 }
 
 /* Contact */
